@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/main_pe430.c"/>
     </sources>
     <configscripts>
-        <srcFile name="D:/Drive/Master/UAMI/FES/MSP430/GY85/main.cfg"/>
+        <srcFile name="C:/Users/Ein/Documents/GitHub/430/GY85/main.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -25,7 +25,7 @@
             platform="ti.platforms.exp430F5438"
             isa="430"
             suffix="e430"
-            rootDir="C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4"
+            rootDir="E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4"
             os="undefined"
             rts="ti.targets.msp430.rts430">
             <model endian="little"
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/main_pe430.cfg"
         xCfgPrefix="package/cfg/main_pe430"
-        cfgScript="D:/Drive/Master/UAMI/FES/MSP430/GY85/main.cfg"
+        cfgScript="C:/Users/Ein/Documents/GitHub/430/GY85/main.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="debug"
         xCfgScript="package/cfg/main_pe430.cfg"
         xCfgPrefix="package/cfg/main_pe430"
-        cfgScript="D:/Drive/Master/UAMI/FES/MSP430/GY85/main.cfg"
+        cfgScript="C:/Users/Ein/Documents/GitHub/430/GY85/main.cfg"
         cfgArgs="null"
         />
     </executables>

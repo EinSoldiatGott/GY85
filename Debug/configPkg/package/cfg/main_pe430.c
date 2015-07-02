@@ -50,7 +50,7 @@
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = D:/Drive/Master/UAMI/FES/MSP430/GY85/Debug/configPkg/package/cfg/main_pe430");
+xdc__META(__ASM__, "@(#)__ASM__ = C:/Users/Ein/Documents/GitHub/430/GY85/Debug/configPkg/package/cfg/main_pe430");
 
 /*
  *  ======== __ISA__ ========
@@ -121,43 +121,43 @@ Void ti_catalog_msp430_init_Boot_init(Void)
  * ======== ti.mcu.msp430.csl.communication.USCI_A0 TEMPLATE ========
  */
 
-/* USCI_A0 stuff from C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/communication/./USCI_A0.xdt */
+/* USCI_A0 stuff from E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/communication/./USCI_A0.xdt */
 
 /*
  * ======== ti.mcu.msp430.csl.communication.USCI_B0 TEMPLATE ========
  */
 
-/* USCI_B0 stuff from C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/communication/./USCI_B0.xdt */
+/* USCI_B0 stuff from E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/communication/./USCI_B0.xdt */
 
 /*
  * ======== ti.mcu.msp430.csl.system.System TEMPLATE ========
  */
 
-/* System stuff from C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/system/./System.xdt */
+/* System stuff from E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/system/./System.xdt */
 
 /*
  * ======== ti.mcu.msp430.csl.clock.BCSplus TEMPLATE ========
  */
 
-/* 2xx Clock stuff from C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/clock/./BCSplus.xdt */
+/* 2xx Clock stuff from E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/clock/./BCSplus.xdt */
 
 /*
  * ======== ti.mcu.msp430.csl.watchdog.WDTplus TEMPLATE ========
  */
 
-/* WDTplus stuff from C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/watchdog/./WDTplus.xdt */
+/* WDTplus stuff from E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/watchdog/./WDTplus.xdt */
 
 /*
  * ======== ti.mcu.msp430.csl.gpio.GPIO TEMPLATE ========
  */
 
-/* GPIO stuff from C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/gpio/./GPIO.xdt */
+/* GPIO stuff from E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/gpio/./GPIO.xdt */
 
 /*
  * ======== ti.mcu.msp430.csl.interrupt_vectors.InterruptVectors TEMPLATE ========
  */
 
-/* 5xx Clock stuff from C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/interrupt_vectors/./InterruptVectors.xdt */
+/* 5xx Clock stuff from E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/interrupt_vectors/./InterruptVectors.xdt */
 
 /*
  * ======== PROGRAM GLOBALS ========

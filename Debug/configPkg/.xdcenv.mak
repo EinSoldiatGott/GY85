@@ -1,8 +1,8 @@
 #
 _XDCBUILDCOUNT = 
 ifneq (,$(findstring path,$(_USEXDCENV_)))
-override XDCPATH = C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages;C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/msp430/MSP430ware_1_97_00_47/driverlib/packages;C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/msp430/MSP430ware_1_97_00_47/driverlib;C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/ccs_base
-override XDCROOT = C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core
+override XDCPATH = E:/ti/grace_3_10_00_82/packages;E:/ti/msp430/MSPWare_2_20_00_19/driverlib/packages;E:/ti/msp430/MSPWare_2_20_00_19/driverlib;E:/ti/ccsv6/ccs_base
+override XDCROOT = E:/ti/xdctools_3_31_00_24_core
 override XDCBUILDCFG = ./config.bld
 endif
 ifneq (,$(findstring args,$(_USEXDCENV_)))
@@ -11,6 +11,6 @@ override XDCTARGETS =
 endif
 #
 ifeq (0,1)
-PKGPATH = C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages;C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/msp430/MSP430ware_1_97_00_47/driverlib/packages;C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/msp430/MSP430ware_1_97_00_47/driverlib;C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/ccs_base;C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages;..
+PKGPATH = E:/ti/grace_3_10_00_82/packages;E:/ti/msp430/MSPWare_2_20_00_19/driverlib/packages;E:/ti/msp430/MSPWare_2_20_00_19/driverlib;E:/ti/ccsv6/ccs_base;E:/ti/xdctools_3_31_00_24_core/packages;..
 HOSTOS = Windows
 endif

@@ -15,94 +15,94 @@ XDCCFGDIR = package/cfg/
 # in the event that some included BOM script changes.
 #
 ifneq (clean,$(MAKECMDGOALS))
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/utils.js:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/utils.js
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/xdc.tci:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/xdc.tci
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/template.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/template.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/om2.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/om2.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/package.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/package.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/utils.js:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/utils.js
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/xdc.tci:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/xdc.tci
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/template.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/template.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/om2.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/om2.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/xmlgen2.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/Warnings.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/IPackage.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/package.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/package.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Clock.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/global/Trace.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/bld.js
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/BuildEnvironment.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/PackageContents.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/_gen.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Library.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Executable.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Repository.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Configuration.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Script.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Manifest.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/Utils.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget2.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITarget3.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/ITargetFilter.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/bld/package.xs
 package.mak: config.bld
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/ITarget.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/ITarget.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/C28_large.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/C28_large.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/C28_float.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/C28_float.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/package.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/package.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/MSP430.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/MSP430.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/MSP430X.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/MSP430X.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/MSP430X_small.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/MSP430X_small.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/package.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/package.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/ITarget.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/ITarget.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/C28_large.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/C28_large.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/C28_float.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/C28_float.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/package.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/package.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/MSP430.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/MSP430.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/MSP430X.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/MSP430X.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/MSP430X_small.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/MSP430X_small.xs
+E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/package.xs:
+package.mak: E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/package.xs
 package.mak: package.bld
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt
-C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt:
-package.mak: C:/Program\ Files\ (x86)/eclipse-SDK-3.8.2-win32/TI/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.opt.xdt
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/File.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/services/io/package.xs
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/compiler.defs.xdt
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/custom.mak.exe.xdt
+E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt:
+package.mak: E:/ti/xdctools_3_31_00_24_core/packages/xdc/tools/configuro/template/package.xs.xdt
 endif
 
-ti.targets.msp430.elf.MSP430.rootDir ?= C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4
-ti.targets.msp430.elf.packageBase ?= C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/targets/msp430/elf/
+ti.targets.msp430.elf.MSP430.rootDir ?= E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4
+ti.targets.msp430.elf.packageBase ?= E:/ti/grace_3_10_00_82/packages/ti/targets/msp430/elf/
 .PRECIOUS: $(XDCCFGDIR)/%.oe430
 .PHONY: all,e430 .dlls,e430 .executables,e430 test,e430
 all,e430: .executables,e430

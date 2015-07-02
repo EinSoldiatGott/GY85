@@ -57,7 +57,7 @@ void main(void)
 	P1OUT &= ~BIT0 ;
 	Grace_init();                   // Activate Grace-generated configuration
 	delay_ms(1);
-	envia_uart("Hola",4);
+//	envia_uart("Hola",4);
 
 	P1OUT|=BIT0;
 	delay_ms(100);
