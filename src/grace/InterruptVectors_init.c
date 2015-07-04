@@ -89,7 +89,9 @@ __interrupt void USCI0TX_ISR_HOOK(void)
 	  if (IFG2 & UCB0RXIFG) {				//Curioso pero la TX ISR atiende las recepciones para i2c
 //		  IE2 &= ~UCB0RXIE;					//Deshabilita la Int para que no reentre
 		  IFG2&= ~UCB0RXIFG;			//Limpia la interrupción, mejor la limpio al enviar// mejor si, por que si no I2C entra aquí
-		  rutildeRX();
+		  	  if(rutildeRX()){
+				  LPM0_EXIT;							//Despierta y sigue con el resto del código
+		  	  }
 	  	  }
 
 

@@ -1,12 +1,10 @@
 #include "i2c.h"
 
 
-void escribeI2C(uint8 dir, uint8 *esc_I2C, uint8 larg){
-
+void escribeI2C(uint8 dir, uint8 larg){
 	preparaInterrupciónTxI2C();
 	UCB0I2CSA = dir;						//Dir de esclavo
 	i_I2C=0;
-	escritura_I2C = esc_I2C;
 	lar_I2C = larg;
 	UCB0CTL1 |= UCTR;					// Modo transmisión
 	UCB0CTL1 |= UCTXSTT;			//Manda Start
@@ -17,17 +15,18 @@ void escribeI2C(uint8 dir, uint8 *esc_I2C, uint8 larg){
 }
 
 
-void leeI2C(uint8 dir, uint8 *lec_I2C, uint8 larg){
+void leeI2C(uint8 dir, uint8 larg){
+	char basura=UCB0RXBUF;
 	preparaInterrupciónRxI2C();
 	UCB0I2CSA = dir;
 	i_I2C=0;
-	lectura_I2C=lec_I2C;
 	lar_I2C=larg;
 	UCB0CTL1 &= ~UCTR;					//Modo recepción
 	UCB0CTL1 |= UCTXSTT;				//Manda Start
-
+	duerme;
 	while(ocupado_I2C);
-
+	basura=UCB0RXBUF;
+//	buffer_lectura_I2C[i_I2C]= UCB0RXBUF;	//recoge último basura
 }
 
 void preparaInterrupciónTxI2C(void){
@@ -49,26 +48,29 @@ void detieneInterrupciones(void){
 
 inline void rutildeTX(void){
 	if(i_I2C<lar_I2C){
-		UCB0TXBUF=escritura_I2C[i_I2C];
-		i_I2C++;
+		UCB0TXBUF=buffer_escritura_I2C[i_I2C];
 	}
 	else{
 			UCB0CTL1 |= UCTXSTP;				//Manda STOP
 			detieneInterrupciones();				//Desactiva ints
 	}
+	i_I2C++;
 }
 
-inline void rutildeRX(void){
+inline bool rutildeRX(void){
 
 	if(i_I2C<lar_I2C){
-		lectura_I2C[i_I2C]= UCB0RXBUF;
-		envia_uart(lectura_I2C+i_I2C,1);
+		buffer_lectura_I2C[i_I2C]= UCB0RXBUF;
+		//		envia_uart(buffer_lectura_I2C+i_I2C,1);
 		i_I2C++;
-		}
+		return FALSE;
+	}
 	else
 	{
 		UCB0CTL1 |= UCTXSTP;				//Manda STOP
 		detieneInterrupciones();
+		return TRUE;
 	}
+
 }
 

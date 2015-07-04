@@ -4,6 +4,13 @@
  *  Created on: 17/06/2015
  *      Author: EinSoldiatGott
  */
+
+/*
+  *
+ * Constantes y definciones
+ * retornoCarro
+ */
+
 #include <msp430g2553.h>
 #include "tipos_var.h"
 
@@ -12,7 +19,8 @@
 
 
 //Variables
-//uint8 *escritura_UART, *lectura_UART;
+static const  uint8 retornoCarro[]={0x0D,0X0A};
+
 
 void envia_uart(uint8 *texto, uint8 len);
 void espera_demanda_uart(void);

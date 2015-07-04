@@ -7,6 +7,8 @@
 
 #include "uart.h"
 
+
+
 void envia_uart(uint8 *escritura_UART, uint8 len){
 
 	uint8 i;
