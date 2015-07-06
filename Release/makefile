@@ -7,6 +7,7 @@ SHELL = cmd.exe
 CG_TOOL_ROOT := E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4
 
 ORDERED_OBJS += \
+"./ADX.obj" \
 "./HMC.obj" \
 "./i2c.obj" \
 "./main.obj" \
@@ -151,8 +152,8 @@ GY85.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)$(GEN_CMDS__QUOTED)
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "HMC.pp" "i2c.pp" "main.pp" "retardos.pp" "uart.pp" 
-	-$(RM) "HMC.obj" "i2c.obj" "main.obj" "retardos.obj" "uart.obj" 
+	-$(RM) "ADX.pp" "HMC.pp" "i2c.pp" "main.pp" "retardos.pp" "uart.pp" 
+	-$(RM) "ADX.obj" "HMC.obj" "i2c.obj" "main.obj" "retardos.obj" "uart.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

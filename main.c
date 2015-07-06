@@ -13,12 +13,12 @@
 #include "uart.h"
 #include "i2c.h"
 #include "HMC.h"
+#include "ADX.h"
 
-
-#define dir_ADXL345	0x53
 
 // DIspositivos
 #define disponibleHMC BIT0;
+#define disponibleADX BIT1;
 uint8 disponiblesI2Cs=0;
 
 
@@ -39,13 +39,24 @@ void main(void)
 	if(verificaComHMC()){
 //		envia_uart(buffer_lectura_I2C,3);
 		disponiblesI2Cs|=disponibleHMC;					//Si encontró al HMC
+		configHMC();
 	}
+
+	if(verificaComADX()){
+		envia_uart("Lalanga",7);
+		disponiblesI2Cs|=disponibleADX;					//Si encontró al HMC
+//		configHMC();
+	}
+
 
 	// >>>>> Fill-in user code here <<<<<
 	while(1){
-//		espera_demanda_uart();
+		espera_demanda_uart();
 		leeHMCxyz();
+//		uint8 buff[]={0x80,0x00, 0x00,0x00, 0x7F,0xFF};
+//		envia_uart(buff,6);
 		envia_uart(buffer_lectura_I2C,6);
+//		envia_uart(retornoCarro,2);
 		delay_ms(100);
 	}
 }

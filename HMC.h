@@ -11,6 +11,7 @@
 #include "i2c.h"
 
 
+
 #ifndef HMC_H_
 #define HMC_H_
 
@@ -46,7 +47,7 @@ static const uint8 dir_HMC	=0x1E;
 bool verificaComHMC();
 void leeHMCxyz();
 void leeHMCtodos();
-
+void configHMC();
 
 
 #endif /* HMC_H_ */

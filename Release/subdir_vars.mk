@@ -10,6 +10,7 @@ CFG_SRCS += \
 ../main.cfg 
 
 C_SRCS += \
+../ADX.c \
 ../HMC.c \
 ../i2c.c \
 ../main.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 ../uart.c 
 
 OBJS += \
+./ADX.obj \
 ./HMC.obj \
 ./i2c.obj \
 ./main.obj \
@@ -24,6 +26,7 @@ OBJS += \
 ./uart.obj 
 
 C_DEPS += \
+./ADX.pp \
 ./HMC.pp \
 ./i2c.pp \
 ./main.pp \
@@ -51,6 +54,7 @@ GEN_MISC_DIRS__QUOTED += \
 "configPkg\" 
 
 C_DEPS__QUOTED += \
+"ADX.pp" \
 "HMC.pp" \
 "i2c.pp" \
 "main.pp" \
@@ -58,6 +62,7 @@ C_DEPS__QUOTED += \
 "uart.pp" 
 
 OBJS__QUOTED += \
+"ADX.obj" \
 "HMC.obj" \
 "i2c.obj" \
 "main.obj" \
@@ -65,6 +70,7 @@ OBJS__QUOTED += \
 "uart.obj" 
 
 C_SRCS__QUOTED += \
+"../ADX.c" \
 "../HMC.c" \
 "../i2c.c" \
 "../main.c" \
