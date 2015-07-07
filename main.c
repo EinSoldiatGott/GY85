@@ -30,34 +30,41 @@ void main(void)
 	P1OUT &= ~BIT0 ;
 	Grace_init();                   // Activate Grace-generated configuration
 	delay_ms(1);
-//	envia_uart("Hola",4);
+	//	envia_uart("Hola",4);
 
 	P1OUT|=BIT0;
 	delay_ms(100);				//Tiempo para el Magneto
 
 
 	if(verificaComHMC()){
-//		envia_uart(buffer_lectura_I2C,3);
+		//		envia_uart(buffer_lectura_I2C,3);
 		disponiblesI2Cs|=disponibleHMC;					//Si encontró al HMC
 		configHMC();
 	}
 
 	if(verificaComADX()){
-		envia_uart("Lalanga",7);
+		//		envia_uart("Lalanga",7);
 		disponiblesI2Cs|=disponibleADX;					//Si encontró al HMC
-//		configHMC();
+		//		configHMC();
 	}
 
 
 	// >>>>> Fill-in user code here <<<<<
 	while(1){
 		espera_demanda_uart();
-		leeHMCxyz();
-//		uint8 buff[]={0x80,0x00, 0x00,0x00, 0x7F,0xFF};
-//		envia_uart(buff,6);
-		envia_uart(buffer_lectura_I2C,6);
-//		envia_uart(retornoCarro,2);
+
+		switch(buffer_escritura_UART[0]){
+		case 'M':
+			leeHMCxyz();
+			envia_uart(buffer_lectura_I2C,6);
+			break;
+		case 'A':
+			leeADXxyz();
+			envia_uart(buffer_lectura_I2C,6);
+			break;
+		default:break;
 		delay_ms(100);
+		}
 	}
 }
 

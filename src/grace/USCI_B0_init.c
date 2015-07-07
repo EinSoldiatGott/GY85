@@ -15,7 +15,7 @@
  *  ==== ALL OTHER CHANGES WILL BE OVERWRITTEN WHEN IT IS REGENERATED ====
  *
  *  This file was generated from
- *      E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/communication/USCI_B0_init.xdt
+ *      C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/communication/USCI_B0_init.xdt
  */
 
 #include <msp430.h>

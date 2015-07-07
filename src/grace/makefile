@@ -1,15 +1,15 @@
 # optional compiler flags
-CCOPTS ?= -vmsp --abi=eabi -O2 --use_hw_mpy=none --include_path="E:/ti/ccsv6/ccs_base/msp430/include" --include_path="E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include" --advice:power=all --define=__MSP430G2553__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal   -qq -pdsw225 
+CCOPTS ?= -vmsp --abi=eabi --use_hw_mpy=none --include_path="C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/ccs_base/msp430/include" --include_path="C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include" --advice:power=all -g --define=__MSP430G2553__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal   -qq -pdsw225 
 
 # required C preprocessor flags
-#    compiler   headers: "E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include"
-#    device     headers: "E:/ti/ccsv6/ccs_base/msp430/include"
-#    Grace      headers: "E:/ti/grace_3_10_00_82/packages"
-CPPFLAGS = -D__MSP430G2553__ -I "E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include" -I "E:/ti/grace_3_10_00_82/packages"  -I "E:/ti/ccsv6/ccs_base/msp430/include" 
+#    compiler   headers: "C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include"
+#    device     headers: "C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/ccs_base/msp430/include"
+#    Grace      headers: "C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages"
+CPPFLAGS = -D__MSP430G2553__ -I "C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include" -I "C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages"  -I "C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/ccs_base/msp430/include" 
 
 # the compiler and archiver commands
-CC = "E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/cl430" --abi=eabi -c --obj_directory=objs/  -vmsp
-AR = "E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/ar430" rq
+CC = "C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/cl430" --abi=eabi -c --obj_directory=objs/  -vmsp
+AR = "C:/PROGRA~2/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/ar430" rq
 RM = cmd.exe /q /c del /f
 MKDIR = mkdir
 

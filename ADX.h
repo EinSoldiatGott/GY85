@@ -18,7 +18,7 @@
 
 #define reg_ADX_id		0x00
 #define reg_ADXxyz		0x32
-
+#define reg_PWRctl		0x2D	 //0; 0; Link; AUTO_SLEEP;Measure;Sleep;Wakeup Wakeup
 //Funciones
 bool verificaComADX();
 void leeADXxyz();

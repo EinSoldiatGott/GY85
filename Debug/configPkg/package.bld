@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/Users/Ein/Documents/GitHub/430/GY85/main.cfg',
+        cfgScript: 'C:/Users/EinSoldiatGott/Documents/GitHub/430/GY85/main.cfg',
         profile: 'debug',
         cfgHome: 'configPkg',
         xsopts: "-Dxdc.cfg.tsort.policy=fast -Dxdc.cfg.gen.metadataFiles=false -Dxdc.cfg.SourceDir.verbose=7",
@@ -42,7 +42,7 @@ else {
 
 var thisObj = {
     cfg:        '../main.cfg',
-    outputPath: 'C:/Users/Ein/Documents/GitHub/430/GY85/Debug/configPkg',
+    outputPath: 'C:/Users/EinSoldiatGott/Documents/GitHub/430/GY85/Debug/configPkg',
     exeName:    'main' + suffix,
     exeIntName: 'main' + suffix.replace('.', '_'),
     targ:       targ,

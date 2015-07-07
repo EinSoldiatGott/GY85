@@ -1,1 +1,1 @@
-"./i2c.obj" "./main.obj" "./uart.obj" "../lnk_msp430g2553.cmd" -l"./configPkg/linker.cmd" -l"libc.a" 
+"./ADX.obj" "./HMC.obj" "./i2c.obj" "./main.obj" "./retardos.obj" "./uart.obj" "../lnk_msp430g2553.cmd" -l"./configPkg/linker.cmd" -l"libc.a" 

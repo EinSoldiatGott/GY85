@@ -10,18 +10,27 @@ CFG_SRCS += \
 ../main.cfg 
 
 C_SRCS += \
+../ADX.c \
+../HMC.c \
 ../i2c.c \
 ../main.c \
+../retardos.c \
 ../uart.c 
 
 OBJS += \
+./ADX.obj \
+./HMC.obj \
 ./i2c.obj \
 ./main.obj \
+./retardos.obj \
 ./uart.obj 
 
 C_DEPS += \
+./ADX.pp \
+./HMC.pp \
 ./i2c.pp \
 ./main.pp \
+./retardos.pp \
 ./uart.pp 
 
 GEN_MISC_DIRS += \
@@ -45,18 +54,27 @@ GEN_MISC_DIRS__QUOTED += \
 "configPkg\" 
 
 C_DEPS__QUOTED += \
+"ADX.pp" \
+"HMC.pp" \
 "i2c.pp" \
 "main.pp" \
+"retardos.pp" \
 "uart.pp" 
 
 OBJS__QUOTED += \
+"ADX.obj" \
+"HMC.obj" \
 "i2c.obj" \
 "main.obj" \
+"retardos.obj" \
 "uart.obj" 
 
 C_SRCS__QUOTED += \
+"../ADX.c" \
+"../HMC.c" \
 "../i2c.c" \
 "../main.c" \
+"../retardos.c" \
 "../uart.c" 
 
 GEN_CMDS__FLAG += \

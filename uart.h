@@ -20,6 +20,9 @@
 
 //Variables
 static const  uint8 retornoCarro[]={0x0D,0X0A};
+uint8 buffer_lectura_UART[15];
+uint8 buffer_escritura_UART[3];
+
 
 
 void envia_uart(uint8 *texto, uint8 len);

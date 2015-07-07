@@ -15,13 +15,15 @@
  *  ==== ALL OTHER CHANGES WILL BE OVERWRITTEN WHEN IT IS REGENERATED ====
  *
  *  This file was generated from
- *      E:/ti/grace_3_10_00_82/packages/ti/mcu/msp430/csl/interrupt_vectors/InterruptVectors_init.xdt
+ *      C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/grace_3_00_03_66/packages/ti/mcu/msp430/csl/interrupt_vectors/InterruptVectors_init.xdt
  */
 #include <msp430.h>
 #include "_Grace.h"
 
 /* USER CODE START (section: InterruptVectors_init_c_prologue) */
 #include "../../i2c.h"
+#include "../../uart.h"
+
 /* USER CODE END (section: InterruptVectors_init_c_prologue) */
 
 /*
@@ -74,29 +76,29 @@ __interrupt void USCI0TX_ISR_HOOK(void)
 
 
 	if ((IFG2 & UCA0TXIFG)) {			//Detecta fin de transmisión UART
-		  IE2 &= ~UCA0TXIE;				//Deshabilita la Int para que no reentre
-		  IFG2&= ~UCA0TXIFG;		//Limpia la interrupción, mejor la limpio al enviar// mejor si, por que si no I2C entra aquí
-		  LPM0_EXIT;							//Despierta y sigue con el resto del código
-	  }
+		IE2 &= ~UCA0TXIE;				//Deshabilita la Int para que no reentre
+		IFG2&= ~UCA0TXIFG;		//Limpia la interrupción, mejor la limpio al enviar// mejor si, por que si no I2C entra aquí
+		LPM0_EXIT;							//Despierta y sigue con el resto del código
+	}
 
 
-	  if ((IFG2 & UCB0TXIFG)) {		//FUe el I2C en modo transmisión?
-//		  IE2 &= ~UCB0TXIE;			//Deshabilita la Int para que no reentre
-		  IFG2&= ~UCB0TXIFG;		//Limpia la interrupción, mejor la limpio al enviar// mejor si, por que si no I2C entra aquí
-		  rutildeTX();
-	  	  }
+	if ((IFG2 & UCB0TXIFG)) {		//FUe el I2C en modo transmisión?
+		//		  IE2 &= ~UCB0TXIE;			//Deshabilita la Int para que no reentre
+		IFG2&= ~UCB0TXIFG;		//Limpia la interrupción, mejor la limpio al enviar// mejor si, por que si no I2C entra aquí
+		rutildeTX();
+	}
 
-	  if (IFG2 & UCB0RXIFG) {				//Curioso pero la TX ISR atiende las recepciones para i2c
-//		  IE2 &= ~UCB0RXIE;					//Deshabilita la Int para que no reentre
-		  IFG2&= ~UCB0RXIFG;			//Limpia la interrupción, mejor la limpio al enviar// mejor si, por que si no I2C entra aquí
-		  	  if(rutildeRX()){
-				  LPM0_EXIT;							//Despierta y sigue con el resto del código
-		  	  }
-	  	  }
+	if (IFG2 & UCB0RXIFG) {				//Curioso pero la TX ISR atiende las recepciones para i2c
+		//		  IE2 &= ~UCB0RXIE;					//Deshabilita la Int para que no reentre
+		IFG2&= ~UCB0RXIFG;			//Limpia la interrupción, mejor la limpio al enviar// mejor si, por que si no I2C entra aquí
+		if(rutildeRX()){
+			LPM0_EXIT;							//Despierta y sigue con el resto del código
+		}
+	}
 
 
 
-    /* USER CODE END (section: USCI0TX_ISR_HOOK) */
+	/* USER CODE END (section: USCI0TX_ISR_HOOK) */
 }
 
 /*
@@ -141,17 +143,16 @@ __interrupt void USCI0RX_ISR_HOOK(void)
     /* USER CODE START (section: USCI0RX_ISR_HOOK) */
 
 	if (IFG2 & UCA0RXIFG) {									//UART
-		  if(UCA0RXBUF=='M'){
-			  IE2 &= ~UCA0RXIE;									//Deshabilita la Int para que no reentre
-			  IFG2&= ~UCA0RXIFG;							//Limpia la interrupción
-			  LPM0_EXIT;
-		  }
+		buffer_escritura_UART[0]=UCA0RXBUF;
+		IE2 &= ~UCA0RXIE;										//Deshabilita la Int para que no reentre
+		IFG2&= ~UCA0RXIFG;									//Limpia la interrupción
+		LPM0_EXIT;
+	}
 
+	if (UCB0STAT & UCNACKIFG){            		// I2C no agarra la onda noAKL
+		UCB0CTL1 |= UCTXSTP;							//termina la transmisión o recepción
+		UCB0STAT &= ~UCNACKIFG;					//limpia Int
+	}
 
-		    if (UCB0STAT & UCNACKIFG){            	// I2C no agarra la onda noAKL
-		      UCB0CTL1 |= UCTXSTP;							//termina la transmisión o recepción
-		      UCB0STAT &= ~UCNACKIFG;				//limpia Int
-		  }
-	    }
 	/* USER CODE END (section: USCI0RX_ISR_HOOK) */
 }
