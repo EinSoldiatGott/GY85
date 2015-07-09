@@ -17,35 +17,22 @@
 
 static const uint8 dir_HMC	=0x1E;
 //Registros//
-//00 Configuration Register A Read/Write
-//01 Configuration Register B Read/Write
-//02 Mode Register Read/Write
-//03 Data Output X MSB Register Read
-//04 Data Output X LSB Register Read
-//05 Data Output Z MSB Register Read
-//06 Data Output Z LSB Register Read
-//07 Data Output Y MSB Register Read
-//08 Data Output Y LSB Register Read
-//09 Status Register Read
-//10 Identification Register A Read
-//11 Identification Register B Read
-//12 Identification Register C Read
 #define reg_cfA		0x00
 #define reg_cfB		0x01
-#define reg_Mod		0x02
-#define reg_XYZ		0x03
+#define reg_HMC_mod		0x02
+#define reg_HMC_xzy		0x03
 #define reg_est			0x09
 #define reg_IDa		0x0A
 #define reg_IDb		0x0B
 #define reg_IDc		0x0C
 
-#define mod_continuo 	0x01
-#define bits_poleo 		0x06
+#define HMC_modo 	0x00		//0 = contínuo
+
 
 
 //Funciones
 bool verificaComHMC();
-void leeHMCxyz();
+void leeHMCxzy();
 void leeHMCtodos();
 void configHMC();
 

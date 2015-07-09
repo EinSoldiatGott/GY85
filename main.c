@@ -14,13 +14,15 @@
 #include "i2c.h"
 #include "HMC.h"
 #include "ADX.h"
+#include "ITG.h"
 
 
 // DIspositivos
 #define disponibleHMC BIT0;
 #define disponibleADX BIT1;
-uint8 disponiblesI2Cs=0;
+#define disponibleITG BIT2;
 
+uint8 disponiblesI2Cs=0;
 
 /*
  *  ======== main ========
@@ -33,38 +35,46 @@ void main(void)
 	//	envia_uart("Hola",4);
 
 	P1OUT|=BIT0;
-	delay_ms(100);				//Tiempo para el Magneto
+	delay_ms(100);				//Tiempo para el sensores
 
 
 	if(verificaComHMC()){
-		//		envia_uart(buffer_lectura_I2C,3);
+//		envia_uart("okHMC",5);
 		disponiblesI2Cs|=disponibleHMC;					//Si encontró al HMC
 		configHMC();
 	}
 
 	if(verificaComADX()){
-		//		envia_uart("Lalanga",7);
-		disponiblesI2Cs|=disponibleADX;					//Si encontró al HMC
-		//		configHMC();
+//		envia_uart("okADX",5);
+		disponiblesI2Cs|=disponibleADX;					//Si encontró al ADX
+		configADX();
 	}
 
+	if(verificaComITG()){
+//		envia_uart("okITG",5);
+		disponiblesI2Cs|=disponibleITG;					//Si encontró al ITG
+		//		configHMC();
+	}
 
 	// >>>>> Fill-in user code here <<<<<
 	while(1){
 		espera_demanda_uart();
-
 		switch(buffer_escritura_UART[0]){
 		case 'M':
-			leeHMCxyz();
+			leeHMCxzy();
 			envia_uart(buffer_lectura_I2C,6);
 			break;
 		case 'A':
 			leeADXxyz();
 			envia_uart(buffer_lectura_I2C,6);
 			break;
+		case 'G':
+			leeITGxyz();
+			envia_uart(buffer_lectura_I2C,6);
+			break;
 		default:break;
-		delay_ms(100);
 		}
+		delay_ms(1);
 	}
 }
 

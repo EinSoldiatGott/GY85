@@ -22,18 +22,21 @@ bool verificaComADX(){
 }
 
 void configADX(){
-	registro_I2C = reg_PWRctl;
-	valor_I2C=0x00;					//Así inicia, sin autosleep
+	registro_I2C = reg_ADX_pwr;
+	valor_I2C=0x08;					//Modo medición
 	escribeI2C(dir_ADX,2);
 	delay_ms(1);
 
+	registro_I2C = reg_ADX_spd;
+	valor_I2C=0x07;					//Vel medición = 6.25Hz
+	escribeI2C(dir_ADX,2);
+	delay_ms(1);
 }
 
 
 void leeADXxyz(){
-	registro_I2C = reg_ADXxyz;
-	valor_I2C=0xFE;
-	escribeI2C(dir_ADX,2);
-	delay_ms(6);
+	registro_I2C = reg_ADX_xyz;
+	escribeI2C(dir_ADX,1);
+	delay_ms(5);
 	leeI2C(dir_ADX,6);
 }

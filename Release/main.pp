@@ -17,6 +17,9 @@ main.obj: ../i2c.h
 main.obj: ../ADX.h
 main.obj: ../retardos.h
 main.obj: ../i2c.h
+main.obj: ../ITG.h
+main.obj: ../retardos.h
+main.obj: ../i2c.h
 
 ../main.c: 
 E:/ti/ccsv6/ccs_base/msp430/include/msp430G2553.h: 
@@ -33,5 +36,8 @@ E:/ti/ccsv6/ccs_base/msp430/include/msp430.h:
 ../retardos.h: 
 ../i2c.h: 
 ../ADX.h: 
+../retardos.h: 
+../i2c.h: 
+../ITG.h: 
 ../retardos.h: 
 ../i2c.h: 

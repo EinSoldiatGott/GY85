@@ -4,11 +4,12 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4
+CG_TOOL_ROOT := E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4
 
 ORDERED_OBJS += \
 "./ADX.obj" \
 "./HMC.obj" \
+"./ITG.obj" \
 "./i2c.obj" \
 "./main.obj" \
 "./retardos.obj" \
@@ -138,13 +139,13 @@ all: GY85.out
 GY85.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/cl430" -vmsp --abi=eabi -O2 --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"GY85.map" --heap_size=80 --stack_size=80 -i"C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/ccs_base/msp430/include" -i"C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/lib" -i"C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GY85_linkInfo.xml" --use_hw_mpy=none --rom_model -o "GY85.out" $(ORDERED_OBJS)
+	"E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/cl430" -vmsp --abi=eabi -O2 --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"GY85.map" --heap_size=80 --stack_size=80 -i"E:/ti/ccsv6/ccs_base/msp430/include" -i"E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/lib" -i"E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GY85_linkInfo.xml" --use_hw_mpy=none --rom_model -o "GY85.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 GY85.hex: $(EXE_OUTPUTS)
 	@echo 'Invoking: MSP430 Hex Utility'
-	"C:/Program Files (x86)/eclipse-SDK-3.8.2-win32/TI/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/hex430" --memwidth=8 --romwidth=8 -o "GY85.hex" $(EXE_OUTPUTS__QUOTED)
+	"E:/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.4/bin/hex430" --memwidth=8 --romwidth=8 -o "GY85.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $@'
 	@echo ' '
 
@@ -152,8 +153,8 @@ GY85.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)$(GEN_CMDS__QUOTED)
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "ADX.pp" "HMC.pp" "i2c.pp" "main.pp" "retardos.pp" "uart.pp" 
-	-$(RM) "ADX.obj" "HMC.obj" "i2c.obj" "main.obj" "retardos.obj" "uart.obj" 
+	-$(RM) "ADX.pp" "HMC.pp" "ITG.pp" "i2c.pp" "main.pp" "retardos.pp" "uart.pp" 
+	-$(RM) "ADX.obj" "HMC.obj" "ITG.obj" "i2c.obj" "main.obj" "retardos.obj" "uart.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

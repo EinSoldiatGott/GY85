@@ -17,8 +17,10 @@
 //#define dir_ADX	0x1D
 
 #define reg_ADX_id		0x00
-#define reg_ADXxyz		0x32
-#define reg_PWRctl		0x2D	 //0; 0; Link; AUTO_SLEEP;Measure;Sleep;Wakeup Wakeup
+#define reg_ADX_xyz		0x32
+#define reg_ADX_spd	0x2C	 //0 0 0 LOW_POWER  Rate RateRate Rate de medición
+#define reg_ADX_pwr	0x2D	 //0; 0; Link; AUTO_SLEEP;Measure;Sleep;Wakeup Wakeup
+
 //Funciones
 bool verificaComADX();
 void leeADXxyz();

@@ -12,6 +12,7 @@ CFG_SRCS += \
 C_SRCS += \
 ../ADX.c \
 ../HMC.c \
+../ITG.c \
 ../i2c.c \
 ../main.c \
 ../retardos.c \
@@ -20,6 +21,7 @@ C_SRCS += \
 OBJS += \
 ./ADX.obj \
 ./HMC.obj \
+./ITG.obj \
 ./i2c.obj \
 ./main.obj \
 ./retardos.obj \
@@ -28,6 +30,7 @@ OBJS += \
 C_DEPS += \
 ./ADX.pp \
 ./HMC.pp \
+./ITG.pp \
 ./i2c.pp \
 ./main.pp \
 ./retardos.pp \
@@ -56,6 +59,7 @@ GEN_MISC_DIRS__QUOTED += \
 C_DEPS__QUOTED += \
 "ADX.pp" \
 "HMC.pp" \
+"ITG.pp" \
 "i2c.pp" \
 "main.pp" \
 "retardos.pp" \
@@ -64,6 +68,7 @@ C_DEPS__QUOTED += \
 OBJS__QUOTED += \
 "ADX.obj" \
 "HMC.obj" \
+"ITG.obj" \
 "i2c.obj" \
 "main.obj" \
 "retardos.obj" \
@@ -72,6 +77,7 @@ OBJS__QUOTED += \
 C_SRCS__QUOTED += \
 "../ADX.c" \
 "../HMC.c" \
+"../ITG.c" \
 "../i2c.c" \
 "../main.c" \
 "../retardos.c" \
